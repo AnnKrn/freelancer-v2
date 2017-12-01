@@ -1,0 +1,366 @@
+/*
+ * Estilos de tu proyecto
+ */
+
+body  {
+  margin: 0 auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+/*tamaño de header (menú)*/
+header {
+  background: #2c3e50;
+  height: 110px;
+  position: fixed;
+  width: 100%;
+}
+
+header > nav { /*revisar porque nav se mueve al hacer la pantalla pequeña*/
+  padding-top: 50px;
+  padding-right: 105px;
+}
+
+header > nav > ul > li {
+  display: inline;
+  text-align: center;
+  padding: 10px 5px;
+}
+
+/*hoover menu*/
+header > nav > ul > li > a:hover {
+  color: #18BC9C;
+}
+
+header > nav > ul {
+  margin: 0 auto;
+  padding: 0;
+}
+
+header > h1 {
+  display: inline-block;
+  height: 10px;
+  margin: 0;
+  padding-left: 10%;
+  padding-top: 30px;
+  width: 50%;
+ }
+
+ /*estilo estrellas decorativas*/
+ hr.star-line {
+   border: 3px solid white;
+   display: inline-block;
+   margin: 0;
+   margin-bottom: 7px;
+   width: 100px;
+ }
+
+ hr.star-line-black {
+   border: 3px solid black;
+   display: inline-block;
+   margin: 0;
+   margin-bottom: 7px;
+   width: 100px;
+ }
+
+/*REVISAR al hacer pequeño se ve un espacio enre secciones, porque??*/
+/*primera seccion*/
+/*background section-1 Portada*/
+#section_1 {
+  padding-top: 110px; /*bajar la sebbion que sube cuando se pone fixed a header, hay otra forma?*/
+  height: 685px;
+  width: 100%;
+}
+
+/*centrar imagen de section-1 Portada*/
+#section_1 > img {
+  display: block;
+  margin: auto;
+  padding-top: 100px;
+}
+
+/*tamaño de texto*/
+#section_1 > h1 {
+  font-size: 80px;
+}
+
+#section_1 > h6 {
+  font-size: 30px;
+}
+
+#section_1 > div, h1, h6 {
+  margin: 30px 0;
+}
+
+/*segunda seccion Portafolio*/
+/*espacio estrella y titulo*/
+#section_2 > div {
+  padding: 10px 0;
+}
+
+#section_2 {
+  height: 885px;
+  width: 100%;
+}
+
+/*tamaño de imagenes de portafolio*/
+#section_2 > div > div > img {
+  height: 252px;
+  /*margin: 13px 13px;*/
+  width: 348px;
+}
+
+/*centrar conjunto de imagenes*/
+#section_2 > #photos {
+  height: 600px;
+  margin-bottom: 0px;
+  overflow: auto;
+  width: 100%;
+}
+
+/*tercera seccion Acerca*/
+ /*tamaño de la seccion*/
+#section_3 {
+  height: 557px;
+  width: 100%;
+}
+
+#section_3 > div {
+  padding: 10px;
+}
+/*REVISAR CAMBIAR LOGO A POSITION QUITAR FLOATS*/
+ /*REVISAR contenido va en escalera, por?? quiens e mueve es p*/
+/*texto en columnas y centrado*/
+#section_3 > #columns {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+}
+
+#section_3 > #columns > p {
+  font-size: 20px;
+  /*line-heigh: 120%; clarito significa que no aplica el estilo??*/
+  margin: 0 0;
+}
+/*estilo de boton download*/
+#section_3 > .shape-button {
+  border-color: white;
+  border-style: solid;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 50px;
+  height: 50px;
+  width: 210px;
+}
+
+#section_3 > .shape-button > i {
+  padding: 15px;
+}
+
+/*cuarta seccion*/
+/*tamaño de la seccion Formulario*/
+#section_4 {
+  height: 938px;
+  width: 100%;
+}
+
+#section_4 > div {
+  padding-top: 15px;
+}
+
+/*formulario*/
+#section_4 > #contact_form {
+  margin: 0 auto;
+  width: 55%;
+}
+
+#section_4 > #contact_form > div {
+  margin-top: 5px;
+  padding: 5px;
+  padding-bottom: 10px;
+}
+
+#section_4 > #contact_form > div > label {
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+}
+
+#section_4 > #contact_form > div > input, textarea {
+  border: none;
+  border-bottom: 1px solid #D5DCDC;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font: 25px sans-serif;
+  margin: 0 auto;
+  width: 100%;
+}
+/*estilo y tamaño del boton*/
+#section_4 > #contact_form > div > button {
+  background-color: #18BC9C;
+  border-color: #18BC9C;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  height: 50px;
+  width: 80px;
+}
+
+/*Footer pie de página*/
+#foot {
+  background: #212529;
+  height: 376px;
+  width: 100%;
+}
+
+#foot > div {
+  height: 200px;
+  margin-top: 0px;
+  padding: 55px 0;
+  width: 100%;
+}
+ /*REVISAR contenido va en escalera, por??*/
+#foot > div > div {
+  display:inline-block;
+  height: 100px;
+  width: 28%;
+}
+
+#foot > div > div > p {
+  margin: 0;
+}
+
+#foot > p {
+  padding-top: 30px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+#foot > div > .icons-list > a > span > .circle-color {
+  color: white;
+}
+
+/*clases para estilos de letra*/
+/*investigar cambiar tipos google fonts*/
+.lato-letter {
+  font-family: 'Lato', sans-serif;
+}
+
+/*centrar texto sin div */
+.center-text {
+  text-align: center;
+}
+/*texto a mayusculas*/
+.text-uppercase {
+ text-transform: uppercase;
+}
+
+/*letra negra*/
+.black-letter {
+  color: black;
+}
+
+/*flotar elementos*/
+.float-right {
+ float: right;
+}
+
+.clear-float {
+ clear: both;
+}
+
+/*investigar como poner la primera letra mayuscula*/
+
+/*fondo verde*/
+.background-green {
+  background-color: #18bc9c;
+}
+ /*tamaño de letra y centrado titulo*/
+.font-size-space {
+  font-size: 45px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-top: 80px;
+}
+
+/*estrella negra*/
+.black-star {
+  color: black;
+}
+
+/*.portafolio-cover {
+  height: 252px;
+  margin: 0;
+  width: 348px;
+}*/
+/*
+.icon-center {
+  margin-top: 25%;
+}
+
+.image-container {
+  height: 252px;
+  margin: 0;
+  width: 348px;
+  position: relative;
+}
+
+.overlay {
+  background-color: #18bc9c;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 90%;
+  transition: .5s ease;
+  height: 252px;
+  margin: 0;
+  width: 348px;
+}
+
+.image {
+  display: block;
+}
+.image-container:hover .overlay {
+  opacity: 50%;
+}
+*/
+/*clases de Modal Window*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 10px;
+  height: 100%;
+  width: 90%;
+}
+
+.close-modal {
+  color: grey;
+  font-size: 30px;
+  float: right;
+}
+
+.close-modal:hover, .close-modal:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,182 @@
+<!-- Agrega aquí la estructura HTML de tu sitio web -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900|Montserrat:600,900" rel="stylesheet">
+    <link rel="stylesheet" href="assets/icon/facebook/facebook-font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/icon/google+/google+-font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/icon/twitter/twitter-font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/icon/likedin/linkedin-font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/icon/dribbble/dribbble-font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/icon/download/download-font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/icon/star/star-font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/7b85ef11c4.js"></script>
+    <title>Freelancer - Start Bootstrap</title>
+  </head>
+  <body>
+    <!-- Menú y titulo-->
+    <header class="text-uppercase">
+      <h1>start bootstrap</h1>
+      <nav class="float-right">
+        <ul>
+          <li><a>portafolio</a></li>
+          <li><a>about</a></li>
+          <li><a>contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Primera seccion Portada-->
+    <section id="section_1" class="clear-float background-green">
+      <img src="assets/images/profile.png" alt="profile">
+      <h1 class="text-uppercase center-text">start bootstrap</h1>
+      <div class="center-text"> <!--investigar poner estrella -->
+        <hr class="star-line">
+        <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+        <hr class="star-line">
+      </div>
+      <h6 class="center-text lato-letter">Web Developer-Graphic Artist-User Experience Designer</h6>
+    </section>
+    <!-- Segunda seccion Portafolio-->
+    <section id="section_2">
+      <h1 class="lato-letter center-text text-uppercase black-letter font-size-space">portafolio</h1>
+      <div class="center-text black-star"> <!--investigar poner estrella -->
+        <hr class="star-line-black">
+        <i class="fa fa-star fa-m black-star" aria-hidden="true"></i>
+        <hr class="star-line-black">
+      </div>
+      <div id="modal_window" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <h1 class="lato-letter center-text text-uppercase black-letter font-size-space">portafolio</h1>
+          <div class="center-text black-star"> <!--investigar poner estrella -->
+            <hr class="star-line-black">
+            <i class="fa fa-star fa-m black-star" aria-hidden="true"></i>
+            <hr class="star-line-black">
+          </div>
+          <img src="assets/images/portfolio/cabin.png" alt="cabin">
+          <p class="black-letter">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+      <div id="photos" class="center-text"> <!--investigar imagenes se enciman al hacer pequeña la pantalla -->
+        <!--<div class="image-container">-->
+          <img id="cabin_photo" src="assets/images/portfolio/cabin.png" alt="cabin" class="image">
+      <!-- <div class="overlay">
+            <i class="fa fa-search-plus fa-5x icon-center" aria-hidden="true"></i>
+          </div>
+        </div>-->
+
+        <img src="assets/images/portfolio/cake.png" alt="cake">
+        <img src="assets/images/portfolio/circus.png" alt="circus">
+        <img src="assets/images/portfolio/game.png" alt="game">
+        <img src="assets/images/portfolio/safe.png" alt="safe">
+        <img src="assets/images/portfolio/submarine.png" alt="submarine">
+      </div>
+    </section>
+    <!-- Tercera seccion Acerca-->
+    <section id="section_3" class="background-green">
+      <h1 class="center-text text-uppercase lato-letter font-size-space">about</h1>
+      <div class="center-text"> <!--investigar poner estrella -->
+        <hr class="star-line">
+        <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+        <hr class="star-line">
+      </div>
+      <div id="columns"> <!--texto en columnas hay alguna equita especial?-->
+        <p class="lato-letter">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS and JavaScrip as well as opcional LESS stylessheets for easy customization.</p>
+        <p class="lato-letter">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+      </div>
+      <div class="shape-button center-text"> <!--boton download-->
+        <i class="fa fa-download fa-lg" aria-hidden="true"> Download Theme</i>
+      </div>
+    </section>
+    <!-- Cuarta seccion Formulario-->
+    <section id="section_4">
+      <h1 class="center-text text-uppercase black-letter font-size-space">contact me</h1>
+      <div class="center-text black-star"> <!--investigar poner estrella -->
+        <hr class="star-line-black">
+        <i class="fa fa-star fa-2x black-star" aria-hidden="true"></i>
+        <hr class="star-line-black">
+      </div>
+       <!--formulario -->
+      <form id="contact_form" action="#" method="post"> <!--email-->
+        <div>  <!--nombre-->
+          <label for="name"></label>
+          <input type="text" name="Name" placeholder="Name">
+        </div>
+
+        <div> <!--email-->
+          <label for="mail"></label>
+          <input type="email" name="mail" placeholder="Email Address" multiple>
+        </div>
+
+        <div> <!--phone-->
+          <label for="phone"></label>
+          <input type="tel" name="phone" placeholder="Phone">
+        </div>
+
+        <div> <!--message-->
+          <label for="msg"></label>
+          <textarea name="message" rows="8" cols="80" placeholder="Message"></textarea>
+        </div>
+
+        <div> <!--boton-->
+          <button type="button" name="button">Send</button>
+        </div>
+      </form>
+    </section>
+    <!-- Footer-->
+    <footer id="foot">
+      <div class="center-text lato-letter">
+        <div>
+          <h1 class="text-uppercase">location</h1>
+          <p>3481 Melrose Place Beverly Hills, CA 90210</p>
+        </div>
+        <div>
+          <h1 class="text-uppercase">around the web</h1>
+          <div class="icons-list">     <!-- Investigar ciculo con borde blanco font awesome-->
+            <a href="#">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x circle-color"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse" aria-hidden="true"></i>
+              </span>
+            </a>
+            <a href="#">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-google-plus fa-stack-1x fa-inverse" aria-hidden="true"></i>
+              </span>
+            </a>
+            <a href="#">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse" aria-hidden="true"></i>
+              </span>
+            </a>
+            <a href="#">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse" aria-hidden="true"></i>
+              </span>
+            </a>
+            <a href="#">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-dribbble fa-stack-1x fa-inverse" aria-hidden="true"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h1 class="text-uppercase">about freelancer</h1>
+          <p>Freelance is a free to use, open source Bootstrap theme created by Start Bootstrap.</p>
+        </div>
+      </div>
+      <p class="center-text ">Copyright &#169; Your Website 2017</p>
+    </footer>
+
+    <script type="text/javascript" src="js/app.js">
+
+    </script>
+  </body>
+</html>
